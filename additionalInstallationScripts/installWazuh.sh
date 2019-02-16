@@ -55,6 +55,11 @@ cat >> /var/ossec/etc/ossec.conf <<\EOF
       <access_key>insert_access_key</access_key>
       <secret_key>insert_secret_key</secret_key>
     </bucket>
+    <bucket type="config">
+      <name>configlogging</name>
+      <access_key>insert_access_key</access_key>
+      <secret_key>insert_secret_key</secret_key>
+    </bucket>
     <bucket type="custom">
       <name>guarddutylogging</name>
       <path>firehose</path>
