@@ -953,6 +953,29 @@
                     [
                       "arn:aws:s3:::",
                       {
+                        "Ref": "S3BucketConfig"
+                      },
+                      "/*"
+                    ]
+                  ]
+                },
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:aws:s3:::",
+                      {
+                        "Ref": "S3BucketConfig"
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:aws:s3:::",
+                      {
                         "Ref": "S3BucketMacie"
                       },
                       "/*"
