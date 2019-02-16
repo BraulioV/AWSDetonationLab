@@ -1558,6 +1558,11 @@
       "Type": "AWS::S3::Bucket",
       "Properties": {}
     },
+    "S3BucketConfig": {
+      "DeletionPolicy": "Retain",
+      "Type": "AWS::S3::Bucket",
+      "Properties": {}
+    },
     "S3BucketGuardDuty": {
       "DeletionPolicy": "Retain",
       "Type": "AWS::S3::Bucket",
