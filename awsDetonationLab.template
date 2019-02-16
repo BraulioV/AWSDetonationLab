@@ -2148,6 +2148,17 @@
         "IsLogging": true
       }
     },
+    "detonationLabConfig": {
+      "DependsOn": [
+        "S3BucketPolicyConfig"
+      ],
+      "Type": "AWS::Config::DeliveryChannel",
+      "Properties": {
+        "S3BucketName": {
+          "Ref": "S3BucketConfig"
+        }
+      }
+    },
     "firehosedeliveryPolicyGuardDuty": {
       "Type": "AWS::IAM::Policy",
       "Properties": {
