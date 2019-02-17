@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.1
+### Added
+* Added support to monitor AWS Config logs in Wazuh.
+
 ## v2.0
 ### Added
 * Added `apache` user to `wheel` group in Linux vulnerable server ([#20](https://github.com/sonofagl1tch/AWSDetonationLab/pull/20)).
